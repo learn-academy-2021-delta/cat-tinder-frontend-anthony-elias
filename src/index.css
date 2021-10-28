@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.not-found {
+  text-align: center;
+}
+
+.page-head {
+  background-color: coral;
+  padding: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.cat-pic {
+  background-color: coral;
+}
