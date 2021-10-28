@@ -15,14 +15,12 @@ code {
 .not-found {
   text-align: center;
 }
-
+.cat-pic {
+  background-image: url(/Users/learnacademy/Desktop/Practice/cat-tinder-frontend/src/assets/header.jpeg);
+  justify-content: left;
+}
 .page-head {
-  background-color: coral;
   padding: 10px;
   display: flex;
   justify-content: right;
-}
-
-.cat-pic {
-  background-color: coral;
 }

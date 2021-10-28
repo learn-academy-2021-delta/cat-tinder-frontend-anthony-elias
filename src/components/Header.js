@@ -10,7 +10,6 @@ class Header extends Component {
       <div className="cat-pic">
       <h3>Cat Tinder!</h3>
       <img src={catTinder} alt="Cats!" className="cats" width="100px" height="100px"/>
-      </div>
       <div className="page-head">
         <ul>
           <NavLink to="/CatIndex">Meet All the Cats</NavLink>
@@ -18,6 +17,7 @@ class Header extends Component {
           <ul>
           <NavLink to="/CatNew">Add a cat</NavLink>
         </ul>
+        </div>
     </div>
     </>
     
