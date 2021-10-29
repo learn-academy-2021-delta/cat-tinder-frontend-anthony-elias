@@ -5,6 +5,7 @@ class Footer extends Component{
   render(){
     return(
       <>
+      <div className="page-foot">
         <ul>
         <NavLink to="/">@copy; 2021</NavLink>
         </ul>
@@ -14,6 +15,7 @@ class Footer extends Component{
           <ul>
           <NavLink to="/CatNew">Add a cat</NavLink>
         </ul>
+        </div>
       </>
     )
   }
