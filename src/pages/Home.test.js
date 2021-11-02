@@ -9,7 +9,7 @@ describe("When Home renders", () => {
     it("displays a heading", () => {
       const home = shallow(<Home />)
       const homeHeading = home.find("h3")
-      expect(homeHeading.text()).toEqual("Meet our Cats!")
+      expect(homeHeading.text()).toEqual("Welcome To Cat Tinder!")
     })
     
   })
