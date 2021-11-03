@@ -4,7 +4,7 @@ class Home extends Component {
     render() {
         return (
             <>
-                <h3>Meet our Cats!</h3>
+                <h3>Welcome To Cat Tinder!</h3>
             </>
         )
     }

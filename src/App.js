@@ -19,6 +19,9 @@ import cats from './mockCats.js'
 class App extends Component {
   constructor(){
     super()
+    this.state = {
+      cats: cats
+    }
   
   }
 
@@ -28,8 +31,17 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/CatIndex" component={CatIndex} />
-          <Route path="/CatShow" component={CatShow} />
+          <Route path="/CatIndex"
+          render={(props) => <CatIndex cats={this.state.cats} />}
+          />
+           <Route
+            path="/CatShow/:id"
+            render={(props) => {
+              let id = props.match.params.id
+              let cat = this.state.cats.find(c => c.id === +id)
+              return <CatShow cat={cat} deleteCat={this.deleteCat} />
+            }}
+          />
           <Route path="/CatNew" component={CatNew} />
           <Route path="/CatEdit" component={CatEdit}/>
           <Route component={NotFound} />
